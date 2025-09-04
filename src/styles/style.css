@@ -20,7 +20,12 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -88,7 +93,8 @@ section h2 {
     letter-spacing: -0.01em;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn,
+.secondary-btn {
     font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     letter-spacing: -0.01em;
@@ -172,32 +178,33 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    
+
     /* O mesmo q  background: url(...) repeate */
     background-image: url('src/assets/pattern.webp');
     background-repeat: repeat;
 
-    /* A imagem começa no canto superior esquerdo apartir da borda */ 
+    /* A imagem começa no canto superior esquerdo apartir da borda */
     background-origin: border-box;
 
     /* O tamanho precisa ser em % para o looping não dessincronizar */
-    background-size: 1%; 
+    background-size: 5%;
 
     /* Faz o background ser 2x maior e usa o translate para mover de
     volta para o canto superior esquerdo */
     translate: 50% 50%;
     scale: 2;
 
-    opacity: 0.025;
+    opacity: 0.03;
     animation: footer-slide 20s linear infinite;
     z-index: 1;
 }
 
 @keyframes footer-slide {
-    from { 
+    from {
         translate: -50% -50%;
     }
-    to { 
+
+    to {
         translate: 50% 50%;
     }
 }
@@ -252,7 +259,8 @@ nav {
     flex-wrap: wrap;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn,
+.secondary-btn {
     font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     letter-spacing: -0.01em;
@@ -374,8 +382,15 @@ nav {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 @keyframes fadeUp {
@@ -393,22 +408,30 @@ nav {
 }
 
 @keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: 100% 100%; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
 }
 
 /* Responsive Design */
 @media (max-width: 1320px) {
     .hero-image .feature-item {
-        transform: scale(0.8); /* Ajuste o valor conforme necessário */
+        transform: scale(0.8);
+        /* Ajuste o valor conforme necessário */
     }
-    
+
     .hero-image .feature-item span {
-        font-size: 0.9rem; /* Ajuste o valor conforme necessário */
+        font-size: 0.9rem;
+        /* Ajuste o valor conforme necessário */
     }
-    
+
     .hero-image .feature-icon {
-        font-size: 1.5rem; /* Ajuste o valor conforme necessário */
+        font-size: 1.5rem;
+        /* Ajuste o valor conforme necessário */
     }
 }
 
@@ -418,23 +441,23 @@ nav {
         text-align: center;
         gap: 2rem;
     }
-    
+
     .hero-text h1 {
         font-size: 2.5rem;
     }
-    
+
     .cta-buttons {
         justify-content: center;
     }
-    
+
     .hero-image {
         order: -1;
     }
-    
+
     .hero-image img {
         max-width: 400px;
     }
-    
+
     .float-item {
         transform: scale(0.8);
     }
@@ -474,23 +497,23 @@ nav {
         text-align: center;
         gap: 2rem;
     }
-    
+
     .hero-text h1 {
         font-size: 2.2rem;
     }
-    
+
     .cta-buttons {
         justify-content: center;
     }
-    
+
     .hero-image {
         order: -1;
     }
-    
+
     .hero-image img {
         max-width: 300px;
     }
-    
+
     .float-item {
         transform: scale(0.7);
     }
@@ -545,7 +568,8 @@ nav {
         gap: 0.5rem;
     }
 
-    .primary-btn, .secondary-btn {
+    .primary-btn,
+    .secondary-btn {
         width: 100%;
         padding: 0.75rem 1rem;
         font-size: 1rem;
@@ -565,7 +589,7 @@ nav {
         gap: 3rem;
         padding: 0 2rem;
     }
-    
+
     .floating-cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -583,7 +607,8 @@ nav {
         padding: 6rem 1rem 3rem;
     }
 
-    .primary-btn, .secondary-btn {
+    .primary-btn,
+    .secondary-btn {
         width: 100%;
         margin-bottom: 1rem;
         padding: 0.875rem 1.5rem;
@@ -1281,7 +1306,7 @@ nav {
     .preview-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .community-preview {
         grid-column: span 2;
     }
@@ -1514,13 +1539,27 @@ nav {
 }
 
 @keyframes floatY {
-    0%, 100% { transform: translate(-50%, 0); }
-    50% { transform: translate(-50%, -10px); }
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -10px);
+    }
 }
 
 @keyframes floatX {
-    0%, 100% { transform: translate(0, -50%); }
-    50% { transform: translate(-10px, -50%); }
+
+    0%,
+    100% {
+        transform: translate(0, -50%);
+    }
+
+    50% {
+        transform: translate(-10px, -50%);
+    }
 }
 
 /* Adjust feature showcase for mobile */
@@ -1539,7 +1578,8 @@ nav {
         width: 90px;
         height: 90px;
         padding: 15px;
-        transform: translate(0, 0); /* Reset any previous transform */
+        transform: translate(0, 0);
+        /* Reset any previous transform */
     }
 
     .feature-item i {
@@ -1597,11 +1637,11 @@ nav {
     background-image: url('src/assets/pattern.webp');
     background-repeat: repeat;
 
-    /* A imagem começa no canto superior esquerdo apartir da borda */ 
+    /* A imagem começa no canto superior esquerdo apartir da borda */
     background-origin: border-box;
 
     /* O tamanho precisa ser em % para o looping não dessincronizar */
-    background-size: 1%; 
+    background-size: 5%;
 
     /* Faz o background ser 2x maior e usa o translate para mover de
     volta para o canto superior esquerdo */
@@ -1614,12 +1654,13 @@ nav {
 }
 
 @keyframes community-interface-slide {
-    from { 
+    from {
         translate: -50% -50%;
     }
-    to { 
+
+    to {
         translate: 50% 50%;
-        
+
     }
 }
 
@@ -1771,29 +1812,30 @@ footer::before {
     background-image: url('src/assets/pattern.webp');
     background-repeat: repeat;
 
-    /* A imagem começa no canto superior esquerdo apartir da borda */ 
+    /* A imagem começa no canto superior esquerdo apartir da borda */
     background-origin: border-box;
 
     /* O tamanho precisa ser em % para o looping não dessincronizar */
-    background-size: 1%; 
+    background-size: 5%;
 
     /* Faz o background ser 2x maior e usa o translate para mover de
     volta para o canto superior esquerdo */
     translate: 50% 50%;
     scale: 2;
 
-    opacity: 0.25;
+    opacity: 0.125;
     animation: footer-slide 20s linear infinite;
     z-index: 1;
 }
 
 @keyframes footer-slide {
-    from { 
+    from {
         translate: -50% -50%;
     }
-    to { 
+
+    to {
         translate: 50% 50%;
-        
+
     }
 }
 
@@ -1885,7 +1927,7 @@ footer::before {
     .hero-text h1 {
         font-size: 2.5rem;
     }
-    
+
     .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1896,17 +1938,17 @@ footer::before {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .cta-buttons {
         justify-content: center;
     }
-    
+
     .benefits-grid,
     .preview-container,
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1917,7 +1959,7 @@ footer::before {
     .hero-text h1 {
         font-size: 2rem;
     }
-    
+
     .nav-links {
         display: none;
     }
@@ -1989,7 +2031,8 @@ footer::before {
         line-height: 1.6;
     }
 
-    .primary-btn, .secondary-btn {
+    .primary-btn,
+    .secondary-btn {
         font-size: 1rem;
         padding: 0.875rem 1rem;
     }
@@ -2120,9 +2163,17 @@ footer::before {
     position: relative;
 }
 
-.avatar:nth-child(1) { background: #4C82F7; }
-.avatar:nth-child(2) { background: #0055CC; }
-.avatar:nth-child(3) { background: #002CFF; }
+.avatar:nth-child(1) {
+    background: #4C82F7;
+}
+
+.avatar:nth-child(2) {
+    background: #0055CC;
+}
+
+.avatar:nth-child(3) {
+    background: #002CFF;
+}
 
 .more-members {
     background: #f0f2ff;
@@ -2277,13 +2328,27 @@ footer::before {
 }
 
 @keyframes floatY {
-    0%, 100% { transform: translate(-50%, 0); }
-    50% { transform: translate(-50%, -10px); }
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -10px);
+    }
 }
 
 @keyframes floatX {
-    0%, 100% { transform: translate(0, -50%); }
-    50% { transform: translate(-10px, -50%); }
+
+    0%,
+    100% {
+        transform: translate(0, -50%);
+    }
+
+    50% {
+        transform: translate(-10px, -50%);
+    }
 }
 
 @media (max-width: 768px) {
@@ -2389,7 +2454,8 @@ footer::before {
         padding: 6rem 1rem 3rem;
     }
 
-    .primary-btn, .secondary-btn {
+    .primary-btn,
+    .secondary-btn {
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -2482,7 +2548,8 @@ footer::before {
         align-items: stretch;
     }
 
-    .primary-btn, .secondary-btn {
+    .primary-btn,
+    .secondary-btn {
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
